@@ -4,7 +4,7 @@ This is an intended personal collection of tweaks and customizations I like on m
 
 ## Show your directory path on windows title bar
 
-![Alt text](useful-commands/images/title-bar-screenshot.png?raw=true "optional title")
+![Alt text](https://github.com/Ivanico/useful-commands/blob/master/images/title-bar-screenshot.png?raw=true "optional title")
 
 A personal preference of mine is to see the full directory path to the file or folder I'm in. Here's the command to set that up
 
