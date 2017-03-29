@@ -7,5 +7,6 @@ So far I have:
 - [Mac Commands](mac-commands.md)
 - [Git Commands](git-commands.md)
 - [Bash Profile](bash_profile.bash)
+- [Apache PHP configuration](apache-php-configuration.md)
 
 This file—and other files in the directory—will keep growing as I find and optimize my workflow and environments.
