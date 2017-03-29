@@ -4,7 +4,7 @@ The purpose of this repo is to collect resources I search for to tweak my system
 
 So far I have:
 
-- Mac Commands
-- Git Commands
+- [Mac Commands](mac-commands.md)
+- [Git Commands](git-commands.md)
 
 This file—and other files in the directory—will keep growing as I find and optimize my workflow and environments.
