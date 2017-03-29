@@ -1,6 +1,6 @@
 # Git commands
 
-*Add a remote repository*
+### Add a remote repository
 
 ``git remote add upstream [git@github.com:[user]/[repo].git``
 
