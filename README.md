@@ -1,6 +1,6 @@
-## Collection of useful mac commands
+# Collection of useful mac commands
 
-# Show your directory path on windows title bar
+## Show your directory path on windows title bar
 
 A personal preference of mine is to see the full directory path to the file or folder I'm in. Here's the command to set that up
 
