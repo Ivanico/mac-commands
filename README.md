@@ -1,4 +1,4 @@
-# useful-commands
+# Useful commands
 
 The purpose of this repo is to collect resources I search for to tweak my system whether that is my Mac, my Git repos or anything that I want to keep useful notes off.
 
