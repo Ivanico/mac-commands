@@ -97,7 +97,7 @@ Switch directories.
 
 To be save do again a backup copy of this file
 
-`$ sudo cp httpd-userdir.conf httpd-userdir.conf.bak`
+`$ sudo cp httpd-userdir.conf httpd-userdir.conf.back`
 
 Open the file
 
@@ -121,5 +121,85 @@ If all went well up to this point you should be able to access the pages on the 
 
 ## Optional steps
 
-asdfasdf adfasdf
+You might want to have something like `username.localhost` instead for the url of your localhost. To do this you'll need to confirgure your Virtul Hosts.
 
+### Configuring Virtual Hosts
+
+Start by backingup your file before editing them. Make sure you are in `/etc/apache2/extra`.
+
+`$ sudo cp httpd-vhosts.conf httpd-vhosts.conf.back`
+
+Then
+
+`$ sudo vim httpd-vhosts.conf`
+
+And remove everything from there and add:
+
+```
+#Virtual Host Entry for foo.localhost
+<VirtualHost *:80>
+  DocumentRoot "/Users/username/Sites/username"
+  ServerName foo.localhost
+  ErrorLog "/private/var/log/apache2/username-error_log"
+  CustomLog "/private/var/log/apache2/username-access_log" common 
+</VirtualHost>
+```
+
+### Editing your host file
+
+Make sure you have it as this
+
+```
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+#Local sites
+127.0.0.1       username.localhost
+```
+
+And then restart Apache
+
+`sudo apachectl restart`
+
+You should now be able to see your index.html file if you type in your url `username.localhost`
+
+### Interpreting PHP withing HTML files
+
+This will come handy as it gives you a bit of flexibility if you want to work on html files or php files.
+
+Add this at the top of your `httpd-vhosts.conf` file. First open file
+
+`sudo vim /etc/apache2/extra/httpd-vhosts.conf`
+
+Then paste this
+
+```
+<FilesMatch ".+\.html$">
+  SetHandler application/x-httpd-php
+</FilesMatch>
+```
+
+Your httpd-vhosts.conf file you look now
+
+```
+#Enable PHP interpretation within HTML files
+<FilesMatch ".+\.html$">
+  SetHandler application/x-httpd-php
+</FilesMatch>
+
+#Virtual Host Entry for foo.localhost
+<VirtualHost *:80>
+  DocumentRoot "/Users/username/Sites/username"
+  ServerName foo.localhost
+  ErrorLog "/private/var/log/apache2/username-error_log"
+  CustomLog "/private/var/log/apache2/username-access_log" common 
+</VirtualHost>
+```
+
+After you've done this, restart Apache and you should be all set. Make sure to test your PHP files and PHP within HTML to see if all is well.
