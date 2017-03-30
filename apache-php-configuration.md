@@ -18,7 +18,7 @@ This will be a subdirectory where you'll be creating all the rest of the project
 
 This will be for testing purposes once whe start configuring Apache.
 
-`$ touch ~/Sites/foo/index.html`
+`$ touch ~/Sites/ifrantar/index.html`
 
 Then add to this file some dummy HTML.
 
@@ -88,4 +88,38 @@ Because the file is quite lengthy if you don't want to strain your eyes use some
 
 `/` + `keyword` you are searching for will take you to that word.
 Pressing `n` will search more instances of the same keyword going forward. `N` if you want to search more instances backwards.
+
+### Edit httpd-userdir.conf
+
+Switch directories.
+
+`$ cd /etc/apache2/extra`
+
+To be save do again a backup copy of this file
+
+`$ sudo cp httpd-userdir.conf httpd-userdir.conf.bak`
+
+Open the file
+
+`$ sudo vim httpd-userdir.conf`
+
+And then uncomment the following line
+
+`Include /private/etc/apache2/users/*.conf`
+
+### Restarting Apache
+
+You always need to restart Apache everytime you are making a change to any of its configuration files. It's a way for it to acknowledge your updates.
+
+`sudo apachectl restart`
+
+### Viewing your files
+
+If all went well up to this point you should be able to access the pages on the directory you have setup. Go to 
+
+`http://localhost/~username`
+
+## Optional steps
+
+asdfasdf adfasdf
 
