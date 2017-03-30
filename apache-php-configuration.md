@@ -1,6 +1,6 @@
 # Apache - PHP configuration
 
-[Pretty cool article](https://medium.com/@JohnFoderaro/how-to-set-up-apache-in-macos-sierra-10-12-bca5a5dfffba) on how to configure on MacOS Sierra Apache and PHP. Detail compiled details I needed without the explanation plus omitted some steps I didn't needed.
+Kudos to the author of this [pretty cool article](https://medium.com/@JohnFoderaro/how-to-set-up-apache-in-macos-sierra-10-12-bca5a5dfffba) on how to configure on Apache and PHP on MacOS Sierra. I summarized and adapted the details of the article to my needs as I'm familiar with some of the explanations given on it. 
 
 ### Create a folder where you'll be hosting your projects
 
