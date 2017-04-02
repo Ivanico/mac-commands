@@ -8,6 +8,6 @@ So far I have:
 - [Git Commands](git-commands.md)
 - [Bash Profile](bash_profile.bash)
 - [Apache PHP configuration](apache-php-configuration.md)
-- [My Terminal settings](my-terminal.md)
+- [My Terminal setup](my-terminal.md)
 
 This file—and other files in the directory—will keep growing as I find and optimize my workflow and environments.
