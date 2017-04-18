@@ -147,7 +147,7 @@ And remove everything from there and add:
 
 ### Editing your host file
 
-Make sure you have it as this
+Make sure to open `sudo vim /etc/hosts/` and edit it to have is as this:
 
 ```
 ##
