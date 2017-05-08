@@ -9,5 +9,6 @@ So far I have:
 - [Bash Profile](bash_profile.bash)
 - [Apache PHP configuration](apache-php-configuration.md)
 - [My Terminal setup](my-terminal.md)
+- [Stelltec random dev notes](stelltec-notes.md)
 
 This file—and other files in the directory—will keep growing as I find and optimize my workflow and environments.
