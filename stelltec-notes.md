@@ -11,3 +11,41 @@
 Because you might have issues with the above command when trying to run devserver, you should run this following command:
 
 `pip install --upgrade --user awscli`
+
+### Sorting issues with Docker with `run-devserver`
+
+Sometimes running the server give me a Database connection error:
+
+```
+SQL State  : 08001
+Error Code : 0
+Message    : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+Failed to connect to Postgres at jdbc:postgresql://localhost:5432/main. Will sleep for 5 seconds and try again.
+Checking Postgres status at jdbc:postgresql://localhost:5432/main
+Flyway 4.1.1 by Boxfuse
+
+ERROR: 
+Unable to obtain Jdbc connection from DataSource (jdbc:postgresql://localhost:5432/main) for user 'master': Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+
+Starting with this set of responses:
+
+```
+Not linux: skipping dependency check
+\e[33m INFO: If you get an error about jdbc connections, just remove the previous Docker containers using: \e[0m
+\e[33m *docker stop 6eb61530afd4 && docker rm 6eb61530afd4* \e[0m
+Reading db config ...
+```
+
+If you run into this issue, make sure to execute the command in the same error message indicated above:
+
+`docker stop [xxx] && docker rm [xxx]`
+
+That should sort the issue.
+
+
+
+
+
