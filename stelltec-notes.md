@@ -45,6 +45,12 @@ If you run into this issue, make sure to execute the command in the same error m
 
 That should sort the issue.
 
+## Sorting issues with nodejs versioning
+
+Sometimes the versioning on Node.js causes some issues when compiling with WebPack. In order to use a different versioning of Node, execute this command:
+
+`nvm use [version ie. 8.1.1]`
+
 
 
 
