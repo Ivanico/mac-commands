@@ -16,6 +16,8 @@ experimental
 └── ...
 ```
 
+## HTML boilerplate
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +39,9 @@ experimental
 </body>
 </html>
 ```
+
+## SCSS boilerplate
+
 On the `app.scss` file include this at the top:
 
 ```
