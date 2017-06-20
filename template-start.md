@@ -11,7 +11,7 @@ experimental
 │   ├── css
 │   ├── js
 │   ├── imgs
-│    index.html
+│   └── index.html
 ├── app1
 └── ...
 ```
