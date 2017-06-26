@@ -49,7 +49,15 @@ That should sort the issue.
 
 Sometimes the versioning on Node.js causes some issues when compiling with WebPack. In order to use a different versioning of Node, execute this command:
 
-`nvm use [version ie. 8.1.1]`
+`nvm use [version ie. 8.1.2]`
+
+`nvm ls` to list all versions installed on your machine.
+
+`nvm alias default [version]` to set a specific version of Node as your default.
+
+`nvm uninstall [version]` to uninstall versions of nodejs.
+
+`nvm -h` to view the help pages.
 
 
 
