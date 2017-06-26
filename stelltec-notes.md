@@ -1,5 +1,9 @@
 # Notes about some random fixes and commands
 
+### Run development server
+
+`./bin/run-devserver.sh`
+
 ### Sorting some issues with `run-devserver`
 
 `brew update` <- to update homebrew
