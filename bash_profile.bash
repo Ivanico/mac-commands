@@ -8,6 +8,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+export PATH=~/bin:$PATH
 export PS1="\[\033[1;95m\]\u\[\033[m\]@\[\033[1;93m\]\w\$(parse_git_branch)\[\033[m\] $ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -26,10 +27,13 @@ alias commit='git commit'
 alias bash-profile='vim ~/.bash_profile'
 alias run-profile='source ~/.bash_profile'
 alias pull='git pull'
+alias pullo='git pull origin'
 alias push='git push'
+alias pusho='git push origin'
 alias branches='git branch'
 alias run-server='cd ~/CODE/core && ./bin/run-db.sh && npm run devserver'
-alias dlbranch='git branch -D'
+alias load-server='./bin/run-devserver.sh'
+alias delete-branch='git branch -D'
 
 # up 'n' folders
 alias ..='cd ..'
