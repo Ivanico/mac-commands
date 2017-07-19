@@ -63,7 +63,22 @@ Sometimes the versioning on Node.js causes some issues when compiling with WebPa
 
 `nvm -h` to view the help pages.
 
+## When you need to start from a clean slate
+
+`rm -rf ./node_modules package-lock.json` to remove the node_modules and package-lock.json
+
+Then you need to run `npm install`
+
+## Single super clean command to stay ready to run server
+
+`maste-pull` is the command which runs: `git pull origin master && rm -r -f ./node_modules package-lock.json && npm install`
 
 
+
+## Images location on CORE
+
+Make sure all images are placed in `/Users/[computername]/CODE/core/assets/images/[whatever-folder-here]`
+
+This when Webpack runs, it'll put the images—or assets—in the right subdirectories in the `public` folder.
 
 
