@@ -49,3 +49,29 @@ alias hibernate='sudo pmset -a hibernatemode 25'
 alias sleep='sudo pmset -a hibernatemode 0'
 alias safesleep='sudo pmset -a hibernatemode 3'
 alias smartsleep='sudo pmset -a hibernatemode 2'
+
+# Create simple app structure
+# CD to the directory you want to create the site and run this command:
+
+html_boilerplate='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="css/app.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+  </body>
+</html>'
+
+alias create-site='mkdir css &&
+                   mkdir scss &&
+                   touch scss/app.scss &&
+                   mkdir imgs &&
+                   mkdir js &&
+                   touch js/scripts.js &&
+                   touch index.html &&
+                   echo "$html_boilerplate" >> index.html'
