@@ -67,11 +67,20 @@ html_boilerplate='<!DOCTYPE html>
   </body>
 </html>'
 
-alias create-site='mkdir css &&
-                   mkdir scss &&
-                   touch scss/app.scss &&
-                   mkdir imgs &&
-                   mkdir js &&
-                   touch js/scripts.js &&
-                   touch index.html &&
-                   echo "$html_boilerplate" >> index.html'
+function create-site {
+
+    mkdir $1
+    pushd $1
+
+    mkdir css &&
+    mkdir scss &&
+    touch scss/app.scss &&
+    mkdir imgs &&
+    mkdir js &&
+    touch js/scripts.js &&
+    touch index.html &&
+    echo "$html_boilerplate" >> index.html
+
+    popd
+
+}
