@@ -5,7 +5,7 @@ The purpose of this repo is to collect resources I search for to tweak my system
 So far I have:
 
 - [Mac Commands](mac-commands.md)
-- [Git Commands](git-commands.md)
+- [Git Commands](git-notes.md)
 - [Bash Profile](bash_profile.bash)
 - [Apache PHP configuration](apache-php-configuration.md)
 - [My Terminal setup](my-terminal.md)
