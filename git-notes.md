@@ -18,3 +18,17 @@ Here the details:
 ``git remote add upstream [git@github.com:[user]/[repo].git``
 
 ``git remote add [user] git@github.com:[user]/repo.git``
+
+### Change name of a local and remote branch
+
+Inside the branch that you want to change the name run this:
+
+`git branch -m new_branch`
+
+Then delete the old branch:
+
+`git push origin :old_branch`
+
+Push the new branch, set local branch to track the new remote
+
+`git push --set-upstream origin new_branch`
