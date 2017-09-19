@@ -6,6 +6,7 @@ So far I have:
 
 - [Mac Commands](mac-commands.md)
 - [Git Commands](git-notes.md)
+- [Git ignore template](.gitignore)
 - [Bash Profile](bash_profile.bash)
 - [Apache PHP configuration](apache-php-configuration.md)
 - [My Terminal setup](my-terminal.md)
