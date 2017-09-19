@@ -19,6 +19,7 @@ export NVM_DIR="$HOME/.nvm"
 
 alias home='cd ~'
 alias core='cd CODE/core'
+alias design='cd DESIGN-stelltec/design'
 alias status='git status'
 alias co='git checkout'
 alias cob='git checkout -b'
