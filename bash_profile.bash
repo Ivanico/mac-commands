@@ -35,6 +35,7 @@ alias branches='git branch'
 alias run-server='cd ~/CODE/core && ./bin/run-db.sh && npm run devserver'
 alias load-server='./bin/run-devserver.sh'
 alias delete-branch='git branch -D'
+alias sass-watch='sass --watch scss:css'
 
 # up 'n' folders
 alias ..='cd ..'
